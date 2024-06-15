@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome  -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <!-- logo  -->
+    <link rel="shortcut icon" href="./icons8-calculator-24.png">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./style.css">
+    <title> Scientific Calculator </title>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" readonly>
+            <!-- buttons  -->
+            <button onclick="power()">x <sup>2</sup></button>
+            <button onclick="pi()">π</button>
+            <button onclick="exp()">e</button>
+            <button onclick="allClear()" class="ac_button">C</button>
+            <button onclick="delLastChar()" class="ac_button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                    viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M576 128c0-35.3-28.7-64-64-64H205.3c-17 0-33.3 6.7-45.3 18.7L9.4 233.4c-6 6-9.4 14.1-9.4 22.6s3.4 16.6 9.4 22.6L160 429.3c12 12 28.3 18.7 45.3 18.7H512c35.3 0 64-28.7 64-64V128zM271 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+                </svg>
+            </button>
+
+            <button onclick="fact()">x!</button>
+            <button onclick="sqrt()">√</button>
+            <button class="btn">(</button>
+            <button class="btn">)</button>
+            <button class="btn">x</button>
+
+            <button onclick="log()">log</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">x</button>
+
+            <button onclick="sin()">sin</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">-</button>
+
+            <button onclick="cos()">cos</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">+</button>
+
+            <button onclick="tan()">tan</button>
+            <button class="btn" onclick="display('%')">%</button>
+            <button class="btn">0</button>
+            <button class="btn" style="font-weight: bold;">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
